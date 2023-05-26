@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+   <link rel="stylesheet" href="files/swiper-bundle.min.css?_v=20230526172735">
+   <link rel="stylesheet" href="css/style.min.css?_v=20230526172735">
+   <script src="files/gsap.min.js?_v=20230526172735" defer></script>
+   <script src="files/scrollSmoother.min.js?_v=20230526172735" defer></script>
+   <script src="files/ScrollTrigger.min.js?_v=20230526172735" defer></script>
+   <script src="js/app.min.js?_v=20230526172735" defer></script>
+   <title></title>
+</head>
+
+<body>
+   <div class="overflowContainer">
+      <div class="page">
+         <header class="header">
+            <nav id="nav" class="header__nav">
+               <ul class="header__nav__list">
+                  <li class="header__nav__list__item __body">
+                     <a href="" class="header__nav__list__item__link">о компании</a>
+                  </li>
+                  <li class="header__nav__list__item __body">
+                     <a href="" class="header__nav__list__item__link">вакансии</a>
+                  </li>
+               </ul>
+               <button class="header__btn __btnSolid">
+                  <div class="__btnSolid__content">
+                     <span class="__btnSolid__content__text">начать играть</span>
+                  </div>
+               </button>
+            </nav>
+            <a href="#" class="header__logo">
+               <img src="images/logo.svg" alt="logo" class="img-con">
+            </a>
+            <div id="burger" class="header__burger">
+               <div class="header__burger__line"></div>
+               <div class="header__burger__line"></div>
+               <div class="header__burger__line"></div>
+               <div class="header__burger__line"></div>
+            </div>
+         </header>
+         <section class="hero">
+            <div class="hero__ghostBlue">
+               <div class="hero__ghostBlue__img">
+                  <picture><source srcset="images/ghostBlue.webp" type="image/webp"><img src="images/ghostBlue.png" alt="ghostBlue" class="img-con"></picture>
+               </div>
+            </div>
+            <div class="hero__ghostOrange">
+               <div class="hero__ghostOrange__img">
+                  <picture><source srcset="images/ghostOrange.webp" type="image/webp"><img src="images/ghostOrange.png" alt="ghostBlue" class="img-con"></picture>
+               </div>
+            </div>
+            <div class="hero__planet">
+               <div class="hero__planet__img">
+                  <picture><source srcset="images/planet.webp" type="image/webp"><img src="images/planet.png" alt="planet" class="img-con"></picture>
+               </div>
+            </div>
+            <div class="hero__text">
+               <h1 class="hero__text__title __h1"><span>Лучшие</span> игры со всего мира</h1>
+               <p class="hero__text__about __lead">Каждую пятницу новая порция. Подписка за <span>399 ₽</span> в месяц
+               </p>
+            </div>
+            <div class="hero__footer">
+               <div class="hero__footer__search">
+                  <div class="hero__footer__search__input">
+                     <div class="__input">
+                        <div class="__input__container">
+                           <div class="__input__container__errorDote"></div>
+                           <input id="inputEmail" type="text" class="__input__press"
+                              placeholder="Введите email чтобы войти в аккаунт или создать новый">
+                        </div>
+                        <span class="__input__text">Текст ошибки</span>
+                     </div>
+                  </div>
+                  <div class="hero__footer__search__button">
+                     <div class="hero__footer__search__button__img">
+                        <img src="images/sliderArrow.svg" alt="arrow" class="img-con">
+                     </div>
+                  </div>
+               </div>
+               <div class="hero__footer__slider">
+                  <div class="swiper heroSlider">
+                     <div class="swiper-wrapper">
+                        <a href="#" class="swiper-slide heroSlider__slide">
+                           <div class="heroSlider__slide__img">
+                              <picture><source srcset="images/svintus.webp" type="image/webp"><img src="images/svintus.jpg" alt="svintus" class="img-ab"></picture>
+                           </div>
+                           <h4 class="heroSlider__slide__title __h4">Свинтус NEON</h4>
+                           <p class="heroSlider__slide__text __body">Весёлая и быстрая карточная игра для любой
+                              компании
+                           </p>
+                        </a>
+                        <a href="#" class="swiper-slide heroSlider__slide">
+                           <div class="heroSlider__slide__img">
+                              <picture><source srcset="images/kvith.webp" type="image/webp"><img src="images/kvith.jpg" alt="kvith" class="img-ab"></picture>
+                           </div>
+                           <h4 class="heroSlider__slide__title">Квиз Логика</h4>
+                           <p class="heroSlider__slide__text __body">Настольное развлечение для детей и взрослых
+                           </p>
+                        </a>
+                        <a href="#" class="swiper-slide heroSlider__slide">
+                           <div class="heroSlider__slide__img">
+                              <picture><source srcset="images/true.webp" type="image/webp"><img src="images/true.jpg" alt="true" class="img-ab"></picture>
+                           </div>
+                           <h4 class="heroSlider__slide__title">Правда или действие</h4>
+                           <p class="heroSlider__slide__text __body">Всё будет основано только на вашей жизни и
+                              фактах
+                              из
+                              неё
+                           </p>
+                        </a>
+                        <a href="#" class="swiper-slide heroSlider__slide">
+                           <div class="heroSlider__slide__img">
+                              <picture><source srcset="images/imajinarium.webp" type="image/webp"><img src="images/imajinarium.jpg" alt="imajinarium" class="img-ab"></picture>
+                           </div>
+                           <h4 class="heroSlider__slide__title">Имаджинариум</h4>
+                           <p class="heroSlider__slide__text __body">Вам понадобится вся ваша фантазия и эмпатия
+                           </p>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </div>
+      <section class="video">
+         <div class="video__content">
+            <video class="video__content__source" muted autoplay loop>
+               <source src="files/video.webm" type='video/webm;' />
+               <source src="files/video.mp4" type='video/mp4;' />
+            </video>
+         </div>
+      </section>
+      <div class="page">
+         <section class="Partystation">
+            <div class="Partystation__buble"></div>
+            <div class="Partystation__header">
+               <p class="Partystation__header__aside">Играйте вместе</p>
+               <h2 class="Partystation__header__title __h2">Partystation — новый способ развлечений для любой компании
+               </h2>
+            </div>
+            <div class="Partystation__slider">
+               <div class="Partystation__slider__android _anim-items _anim-no-hide">
+                  <div class="Partystation__slider__android__arrow">
+                     <img src="images/arrowAndroid.svg" alt="arrow" class="img-con">
+                  </div>
+                  <div class="Partystation__slider__android__logo">
+                     <img src="images/android.svg" alt="android" class="img-con">
+                  </div>
+                  <p class="Partystation__slider__android__text __lead">Так же доступно на AndroidTV</p>
+               </div>
+               <div class="Partystation__slider__cosmonavt01">
+                  <div class="Partystation__slider__cosmonavt01__img">
+                     <picture><source srcset="images/cosmonavt01.webp" type="image/webp"><img src="images/cosmonavt01.png" alt="cosmonavt" class="img-con"></picture>
+                  </div>
+               </div>
+               <div class="Partystation__slider__cosmonavt02">
+                  <div class="Partystation__slider__cosmonavt02__img">
+                     <picture><source srcset="images/cosmonavt02.webp" type="image/webp"><img src="images/cosmonavt02.png" alt="cosmonavt" class="img-con"></picture>
+                  </div>
+               </div>
+               <div class="swiper PartystationSlider">
+                  <div class="swiper-wrapper">
+                     <div class="swiper-slide PartystationSlider__slide _anim-items _anim-no-hide">
+                        <div class="PartystationSlider__slide__arrow">
+                           <img src="images/arrow01.svg" alt="arrow" class="img-con">
+                        </div>
+                        <div class="PartystationSlider__slide__circle">
+                           <div class="PartystationSlider__slide__circle__number __number">01</div>
+                        </div>
+                        <p class="PartystationSlider__slide__text __lead">Собери друзей перед экраном ТВ и можно
+                           начинать вечеринку!</p>
+                     </div>
+                     <div class="swiper-slide PartystationSlider__slide _anim-items _anim-no-hide">
+                        <div class="PartystationSlider__slide__arrow">
+                           <img src="images/arrow02.svg" alt="arrow" class="img-con">
+                        </div>
+                        <div class="PartystationSlider__slide__circle">
+                           <div class="PartystationSlider__slide__circle__number __number">02</div>
+                        </div>
+                        <p class="PartystationSlider__slide__text __lead">Подключайте смартфоны к телевизору одним
+                           нажатием</p>
+                     </div>
+                     <div class="swiper-slide PartystationSlider__slide _anim-items _anim-no-hide">
+                        <div class="PartystationSlider__slide__arrow">
+                           <img src="images/arrow03.svg" alt="arrow" class="img-con">
+                        </div>
+                        <div class="PartystationSlider__slide__circle">
+                           <div class="PartystationSlider__slide__circle__number __number">03</div>
+                        </div>
+                        <p class="PartystationSlider__slide__text __lead">Смартфоны в руках возьмут — игровые
+                           контроллеры</p>
+                     </div>
+                     <div class="swiper-slide PartystationSlider__slideStart _anim-items _anim-no-hide">
+                        <a href="#" class="PartystationSlider__slideStart__circle __btnSolid">
+                           <div class="__btnSolid__content">
+                              <span class="__btnSolid__content__text __lead">начать играть</span>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="Partystation__slider__pagination"></div>
+            <div class="Partystation__footer">
+               <h3 class="Partystation__footer__title __h3">Где хотите начать играть?</h3>
+               <div class="Partystation__footer__content">
+                  <button class="Partystation__footer__content__btn __btnSolid">
+                     <div class="__btnSolid__content">
+                        <span class="__btnSolid__content__text">ПК</span>
+                     </div>
+                  </button>
+                  <span class="Partystation__footer__content__text __h3">или</span>
+                  <button class="Partystation__footer__content__btn __btnSolid">
+                     <div class="__btnSolid__content">
+                        <span class="__btnSolid__content__text">Android TV</span>
+                     </div>
+                  </button>
+               </div>
+            </div>
+         </section>
+      </div>
+      <section class="cataloge">
+         <div class="cataloge__header">
+            <p class="cataloge__header__aside">во что сыграем?</p>
+            <h2 class="cataloge__header__title __h2">Простые правила, быстрые и интересные партии и постоянно
+               пополняющийся каталог</h2>
+         </div>
+         <div class="cataloge__mainslider">
+            <div class="swiper catalogeMainSlider">
+               <div class="swiper-wrapper">
+                  <div class="swiper-slide catalogeMainSlider__slide">
+                     <div class="catalogeMainSlider__slide__img">
+                        <button class="cataloge__mainslider__next">
+                           <img src="images/arrowSlider.svg" alt="arrowSlider" class="img-con">
+                        </button>
+                        <picture><source srcset="images/svintus.webp" type="image/webp"><img src="images/svintus.jpg" alt="game svintus" class="img-ab"></picture>
+                     </div>
+                     <div class="catalogeMainSlider__slide__info">
+                        <h3 class="catalogeMainSlider__slide__info__title __h3">Свинтус NEON</h3>
+                        <p class="catalogeMainSlider__slide__info__text __body">Весёлая и быстрая карточная игра для
+                           любой компании, для малого и большого количества игроков</p>
+                     </div>
+                  </div>
+                  <div class="swiper-slide catalogeMainSlider__slide">
+                     <div class="catalogeMainSlider__slide__img">
+                        <button class="cataloge__mainslider__next">
+                           <img src="images/arrowSlider.svg" alt="arrowSlider" class="img-con">
+                        </button>
+                        <picture><source srcset="images/kvith.webp" type="image/webp"><img src="images/kvith.jpg" alt="game kvith" class="img-ab"></picture>
+                     </div>
+                     <div class="catalogeMainSlider__slide__info">
+                        <h3 class="catalogeMainSlider__slide__info__title __h3">Квиз Логика</h3>
+                        <p class="catalogeMainSlider__slide__info__text __body">Настольное развлечение для детей и
+                           взрослых</p>
+                     </div>
+                  </div>
+                  <div class="swiper-slide catalogeMainSlider__slide">
+                     <div class="catalogeMainSlider__slide__img">
+                        <button class="cataloge__mainslider__next">
+                           <img src="images/arrowSlider.svg" alt="arrowSlider" class="img-con">
+                        </button>
+                        <picture><source srcset="images/true.webp" type="image/webp"><img src="images/true.jpg" alt="game true" class="img-ab"></picture>
+                     </div>
+                     <div class="catalogeMainSlider__slide__info">
+                        <h3 class="catalogeMainSlider__slide__info__title __h3">Правда или действие</h3>
+                        <p class="catalogeMainSlider__slide__info__text __body">Всё будет основано только на вашей жизни
+                           и фактах из неё</p>
+                     </div>
+                  </div>
+                  <div class="swiper-slide catalogeMainSlider__slide">
+                     <div class="catalogeMainSlider__slide__img">
+                        <picture><source srcset="images/imajinarium.webp" type="image/webp"><img src="images/imajinarium.jpg" alt="game imajinarium" class="img-ab"></picture>
+                     </div>
+                     <div class="catalogeMainSlider__slide__info">
+                        <h3 class="catalogeMainSlider__slide__info__title __h3">Имаджинариум</h3>
+                        <p class="catalogeMainSlider__slide__info__text __body">Вам понадобится вся ваша фантазия и
+                           эмпатия</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="cataloge__aboutSlider">
+            <div class="swiper catalogeaboutSlider">
+               <div class="swiper-wrapper">
+                  <div class="swiper-slide catalogeaboutSlider__slide __first">
+                     <div class="catalogeaboutSlider__slide__progress">
+                        <div class="catalogeaboutSlider__slide__progress__value"></div>
+                     </div>
+                     <div class="catalogeaboutSlider__slide__content">
+                        <div class="catalogeaboutSlider__slide__content__info">
+                           <h4 class="catalogeaboutSlider__slide__content__info__title __h4">Свинтус NEON</h4>
+                           <p class="catalogeaboutSlider__slide__content__info__text __body">Хрю-киберпанк наступил</p>
+                        </div>
+                        <div class="catalogeaboutSlider__slide__content__logo">
+                           <picture><source srcset="images/svintus.webp" type="image/webp"><img src="images/svintus.jpg" alt="game svintus" class="img-ab"></picture>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper-slide catalogeaboutSlider__slide">
+                     <div class="catalogeaboutSlider__slide__progress">
+                        <div class="catalogeaboutSlider__slide__progress__value"></div>
+                     </div>
+                     <div class="catalogeaboutSlider__slide__content">
+                        <div class="catalogeaboutSlider__slide__content__info">
+                           <h4 class="catalogeaboutSlider__slide__content__info__title __h4">Квиз Логика</h4>
+                           <p class="catalogeaboutSlider__slide__content__info__text __body">Раскидай мозгами</p>
+                        </div>
+                        <div class="catalogeaboutSlider__slide__content__logo">
+                           <picture><source srcset="images/kvith.webp" type="image/webp"><img src="images/kvith.jpg" alt="game kvith" class="img-ab"></picture>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper-slide catalogeaboutSlider__slide">
+                     <div class="catalogeaboutSlider__slide__progress">
+                        <div class="catalogeaboutSlider__slide__progress__value"></div>
+                     </div>
+                     <div class="catalogeaboutSlider__slide__content">
+                        <div class="catalogeaboutSlider__slide__content__info">
+                           <h4 class="catalogeaboutSlider__slide__content__info__title __h4">Правда или действие</h4>
+                           <p class="catalogeaboutSlider__slide__content__info__text __body">Раскидай мозгами</p>
+                        </div>
+                        <div class="catalogeaboutSlider__slide__content__logo">
+                           <picture><source srcset="images/true.webp" type="image/webp"><img src="images/true.jpg" alt="game true" class="img-ab"></picture>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper-slide catalogeaboutSlider__slide">
+                     <div class="catalogeaboutSlider__slide__progress">
+                        <div class="catalogeaboutSlider__slide__progress__value"></div>
+                     </div>
+                     <div class="catalogeaboutSlider__slide__content">
+                        <div class="catalogeaboutSlider__slide__content__info">
+                           <h4 class="catalogeaboutSlider__slide__content__info__title __h4">Имаджинариум</h4>
+                           <p class="catalogeaboutSlider__slide__content__info__text __body">Раскидай мозгами</p>
+                        </div>
+                        <div class="catalogeaboutSlider__slide__content__logo">
+                           <picture><source srcset="images/imajinarium.webp" type="image/webp"><img src="images/imajinarium.jpg" alt="game imajinarium" class="img-ab"></picture>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="cataloge__paginnation"></div>
+      </section>
+      <div class="page">
+         <section class="sliderItems">
+            <div class="sliderItem">
+               <div class="sliderItem__header">
+                  <h2 class="sliderItem__title __h2">Новинки</h2>
+                  <div class="sliderItem__header__buttons">
+                     <button class="sliderItem__header__button __prev __btnSlider">
+                        <div class="__btnSlider__content">
+                           <div class="__btnSlider__content__img">
+                              <img src="images/sliderArrow.svg" alt="sliderArrow" class="img-con">
+                           </div>
+                        </div>
+                     </button>
+                     <button class="sliderItem__header__button __next __btnSlider">
+                        <div class="__btnSlider__content">
+                           <div class="__btnSlider__content__img">
+                              <img src="images/sliderArrow.svg" alt="sliderArrow" class="img-con">
+                           </div>
+                        </div>
+                     </button>
+                  </div>
+               </div>
+               <div class="sliderItem__slider">
+                  <div class="swiper sliderItemSlider">
+                     <div class="swiper-wrapper">
+                        <a href="#" class="swiper-slide sliderItemSlider__slide">
+                           <div class="sliderItemSlider__slide__premium">
+                              <div class="sliderItemSlider__slide__premium__img">
+                                 <img src="images/diamond.svg" alt="diamond" class="img-con">
+                              </div>
+                              <span class="sliderItemSlider__slide__premium__text">Премиум</span>
+                           </div>
+                           <div class="sliderItemSlider__slide__img">
+                              <picture><source srcset="images/thaslaneth.webp" type="image/webp"><img src="images/thaslaneth.jpg" alt="thaslaneth" class="img-ab"></picture>
+                           </div>
+                        </a>
+                        <a href="#" class="swiper-slide sliderItemSlider__slide">
+                           <div class="sliderItemSlider__slide__img">
+                              <picture><source srcset="images/true.webp" type="image/webp"><img src="images/true.jpg" alt="true" class="img-ab"></picture>
+                           </div>
+                        </a>
+                        <a href="#" class="swiper-slide sliderItemSlider__slide">
+                           <div class="sliderItemSlider__slide__img">
+                              <picture><source srcset="images/svintus.webp" type="image/webp"><img src="images/svintus.jpg" alt="svintus" class="img-ab"></picture>
+                           </div>
+                        </a>
+                        <a href="#" class="swiper-slide sliderItemSlider__slide">
+                           <div class="sliderItemSlider__slide__img">
+                              <picture><source srcset="images/logikon.webp" type="image/webp"><img src="images/logikon.jpg" alt="logikon" class="img-ab"></picture>
+                           </div>
+                        </a>
+                        <a href="#" class="swiper-slide sliderItemSlider__slide">
+                           <div class="sliderItemSlider__slide__img">
+                              <picture><source srcset="images/mafia.webp" type="image/webp"><img src="images/mafia.jpg" alt="mafia" class="img-ab"></picture>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+            <div class="sliderItem">
+               <div class="sliderItem__header">
+                  <h2 class="sliderItem__title __h2">Для всей семьи</h2>
+                  <div class="sliderItem__header__buttons">
+                     <button class="sliderItem__header__button __prev __btnSlider">
+                        <div class="__btnSlider__content">
+                           <div class="__btnSlider__content__img">
+                              <img src="images/sliderArrow.svg" alt="sliderArrow" class="img-con">
+                           </div>
+                        </div>
+                     </button>
+                     <button class="sliderItem__header__button __next __btnSlider">
+                        <div class="__btnSlider__content">
+                           <div class="__btnSlider__content__img">
+                              <img src="images/sliderArrow.svg" alt="sliderArrow" class="img-con">
+                           </div>
+                        </div>
+                     </button>
+                  </div>
+               </div>
+               <div class="sliderItem__slider">
+                  <div class="swiper sliderItemSlider">
+                     <div class="swiper-wrapper">
+                        <a href="#" class="swiper-slide sliderItemSlider__slide">
+                           <div class="sliderItemSlider__slide__img">
+                              <picture><source srcset="images/eda.webp" type="image/webp"><img src="images/eda.jpg" alt="eda" class="img-ab"></picture>
+                           </div>
+                        </a>
+                        <a href="#" class="swiper-slide sliderItemSlider__slide">
+                           <div class="sliderItemSlider__slide__img">
+                              <picture><source srcset="images/party.webp" type="image/webp"><img src="images/party.jpg" alt="party" class="img-ab"></picture>
+                           </div>
+                        </a>
+                        <a href="#" class="swiper-slide sliderItemSlider__slide">
+                           <div class="sliderItemSlider__slide__premium">
+                              <div class="sliderItemSlider__slide__premium__img">
+                                 <img src="images/diamond.svg" alt="diamond" class="img-con">
+                              </div>
+                              <span class="sliderItemSlider__slide__premium__text">Премиум</span>
+                           </div>
+                           <div class="sliderItemSlider__slide__img">
+                              <picture><source srcset="images/kvith.webp" type="image/webp"><img src="images/kvith.jpg" alt="kvith" class="img-ab"></picture>
+                           </div>
+                        </a>
+                        <a href="#" class="swiper-slide sliderItemSlider__slide">
+                           <div class="sliderItemSlider__slide__img">
+                              <picture><source srcset="images/imajinarium.webp" type="image/webp"><img src="images/imajinarium.jpg" alt="imajinarium" class="img-ab"></picture>
+                           </div>
+                        </a>
+                        <a href="#" class="swiper-slide sliderItemSlider__slide">
+                           <div class="sliderItemSlider__slide__img">
+                              <picture><source srcset="images/true.webp" type="image/webp"><img src="images/true.jpg" alt="true" class="img-ab"></picture>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="sliderItem">
+               <div class="sliderItem__header">
+                  <h2 class="sliderItem__title __h2">Для самых умных</h2>
+                  <div class="sliderItem__header__buttons">
+                     <button class="sliderItem__header__button __prev __btnSlider">
+                        <div class="__btnSlider__content">
+                           <div class="__btnSlider__content__img">
+                              <img src="images/sliderArrow.svg" alt="sliderArrow" class="img-con">
+                           </div>
+                        </div>
+                     </button>
+                     <button class="sliderItem__header__button __next __btnSlider">
+                        <div class="__btnSlider__content">
+                           <div class="__btnSlider__content__img">
+                              <img src="images/sliderArrow.svg" alt="sliderArrow" class="img-con">
+                           </div>
+                        </div>
+                     </button>
+                  </div>
+               </div>
+               <div class="sliderItem__slider">
+                  <div class="swiper sliderItemSlider">
+                     <div class="swiper-wrapper">
+                        <a href="#" class="swiper-slide sliderItemSlider__slide">
+                           <div class="sliderItemSlider__slide__img">
+                              <picture><source srcset="images/mafiaq.webp" type="image/webp"><img src="images/mafiaq.jpg" alt="mafiaq" class="img-ab"></picture>
+                           </div>
+                        </a>
+                        <a href="#" class="swiper-slide sliderItemSlider__slide">
+                           <div class="sliderItemSlider__slide__img">
+                              <picture><source srcset="images/logikon.webp" type="image/webp"><img src="images/logikon.jpg" alt="logikon" class="img-ab"></picture>
+                           </div>
+                        </a>
+                        <a href="#" class="swiper-slide sliderItemSlider__slide">
+                           <div class="sliderItemSlider__slide__img">
+                              <picture><source srcset="images/mozgo.webp" type="image/webp"><img src="images/mozgo.jpg" alt="mozgo" class="img-ab"></picture>
+                           </div>
+                        </a>
+                        <a href="#" class="swiper-slide sliderItemSlider__slide">
+                           <div class="sliderItemSlider__slide__img">
+                              <picture><source srcset="images/krokodil.webp" type="image/webp"><img src="images/krokodil.jpg" alt="krokodil" class="img-ab"></picture>
+                           </div>
+                        </a>
+                        <a href="#" class="swiper-slide sliderItemSlider__slide">
+                           <div class="sliderItemSlider__slide__img">
+                              <picture><source srcset="images/eda.webp" type="image/webp"><img src="images/eda.jpg" alt="eda" class="img-ab"></picture>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+         </section>
+         <section class="price">
+            <div class="price__header">
+               <p class="cataloge__header__aside">Играйте бесплатно, купите потом</p>
+            </div>
+            <div class="price__items">
+               <a href="#" class="price__item">
+                  <div class="price__item__blue">
+                     <img src="images/priceBlue.svg" alt="priceBlue" class="img-con">
+                  </div>
+                  <div class="price__item__circle"></div>
+                  <h2 class="price__item__title __h2">Бесплатно</h2>
+                  <div class="price__item__footer">
+                     <span class="price__item__footer__text __lead">Базовая версия</span>
+                     <span class="price__item__footer__text __lead">с ограниченным доступом</span>
+                  </div>
+               </a>
+               <a href="#" class="price__item">
+                  <div class="price__item__star">
+                     <img src="images/priceStar.svg" alt="priceStar" class="img-con">
+                  </div>
+                  <div class="price__item__circle"></div>
+                  <h2 class="price__item__title __h2">399 руб/месяц</h2>
+                  <div class="price__item__footer">
+                     <span class="price__item__footer__text __lead">Премиум версия</span>
+                     <span class="price__item__footer__text __lead">с полным доступом</span>
+                  </div>
+               </a>
+            </div>
+         </section>
+         <section class="platform">
+            <div class="platform__header">
+               <p class="cataloge__header__aside">Возможности платформы</p>
+            </div>
+            <div class="platform__slider">
+               <div class="swiper platformSlider">
+                  <div class="platformSlider__cubic">
+                     <picture><source srcset="images/cubic.webp" type="image/webp"><img src="images/cubic.png" alt="cubic" class="img-con"></picture>
+                  </div>
+                  <div class="swiper-wrapper">
+                     <div class="swiper-slide platformSlider__slide">
+                        <div class="platformSlider__slide__info _anim-items _anim-no-hide">
+                           <span class="platformSlider__slide__info__number __number">01</span>
+                           <div class="platformSlider__slide__info__content">
+                              <h2 class="platformSlider__slide__info__content__title __h2">
+                                 Можно играть<br>на
+                                 <span> Smart-tv </span>
+                                 или
+                                 <span> PC</span>
+                              </h2>
+                              <p class="platformSlider__slide__info__content__text __lead">Собери друзей перед экраном
+                                 ТВ и можно
+                                 начинать вечеринку!</p>
+                              <a href="#" class="platformSlider__slide__info__content__text__btn __btnSolid">
+                                 <div class="__btnSolid__content">
+                                    <span class="__btnSolid__content__text">начать играть</span>
+                                 </div>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="platformSlider__slide__info__img">
+                           <div class="platformSlider__slide__info__img__content">
+                              <div class="platformSlider__slide__info__img__content__display">
+                                 <picture><source srcset="images/display.webp" type="image/webp"><img src="images/display.png" alt="display" class="img-con"></picture>
+                              </div>
+                              <div class="platformSlider__slide__info__img__content__laptop">
+                                 <picture><source srcset="images/laptop.webp" type="image/webp"><img src="images/laptop.png" alt="laptop" class="img-con"></picture>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="swiper-slide platformSlider__slide">
+                        <div class="platformSlider__slide__info _anim-items _anim-no-hide">
+                           <span class="platformSlider__slide__info__number __number">02</span>
+                           <div class="platformSlider__slide__info__content">
+                              <h2 class="platformSlider__slide__info__content__title __h2">
+                                 Мобильный телефон <br>в качестве
+                                 <span> контроллера</span>
+                              </h2>
+                              <p class="platformSlider__slide__info__content__text __lead">с их помощью можно выбирать
+                                 правильные ответы, управлять событиями на большом экране</p>
+                              <a href="#" class="platformSlider__slide__info__content__text__btn __btnSolid">
+                                 <div class="__btnSolid__content">
+                                    <span class="__btnSolid__content__text">начать играть</span>
+                                 </div>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="platformSlider__slide__info__img">
+                           <div class="platformSlider__slide__info__img__content">
+                              <div class="platformSlider__slide__info__img__content__phone">
+                                 <picture><source srcset="images/phone.webp" type="image/webp"><img src="images/phone.png" alt="phone" class="img-con"></picture>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="swiper-slide platformSlider__slide">
+                        <div class="platformSlider__slide__info _anim-items _anim-no-hide">
+                           <span class="platformSlider__slide__info__number __number">03</span>
+                           <div class="platformSlider__slide__info__content">
+                              <h2 class="platformSlider__slide__info__content__title __h2">
+                                 <span>Новые </span>
+                                 игры<br>каждую пятницу
+                              </h2>
+                              <p class="platformSlider__slide__info__content__text __lead">Простые правила, быстрые и
+                                 интересные партии</p>
+                              <a href="#" class="platformSlider__slide__info__content__text__btn __btnSolid">
+                                 <div class="__btnSolid__content">
+                                    <span class="__btnSolid__content__text">начать играть</span>
+                                 </div>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="platformSlider__slide__info__img">
+                           <div class="platformSlider__slide__info__img__content">
+                              <div class="platformSlider__slide__info__img__content__items">
+                                 <div class="platformSlider__slide__info__img__content__item">
+                                    <picture><source srcset="images/mafiaq.webp" type="image/webp"><img src="images/mafiaq.jpg" alt="mafiaq" class="img-ab"></picture>
+                                 </div>
+                                 <div class="platformSlider__slide__info__img__content__item">
+                                    <picture><source srcset="images/thaslaneth.webp" type="image/webp"><img src="images/thaslaneth.jpg" alt="thaslaneth" class="img-ab"></picture>
+                                 </div>
+                                 <div class="platformSlider__slide__info__img__content__item">
+                                    <picture><source srcset="images/true.webp" type="image/webp"><img src="images/true.jpg" alt="true" class="img-ab"></picture>
+                                 </div>
+                                 <div class="platformSlider__slide__info__img__content__item">
+                                    <picture><source srcset="images/krokodil.webp" type="image/webp"><img src="images/krokodil.jpg" alt="krokodil" class="img-ab"></picture>
+                                 </div>
+                                 <div class="platformSlider__slide__info__img__content__item">
+                                    <picture><source srcset="images/svintus.webp" type="image/webp"><img src="images/svintus.jpg" alt="svintus" class="img-ab"></picture>
+                                 </div>
+                                 <div class="platformSlider__slide__info__img__content__item">
+                                    <picture><source srcset="images/eda.webp" type="image/webp"><img src="images/eda.jpg" alt="eda" class="img-ab"></picture>
+                                 </div>
+                              </div>
+                              <div class="platformSlider__slide__info__img__content__items">
+                                 <div class="platformSlider__slide__info__img__content__item">
+                                    <picture><source srcset="images/true.webp" type="image/webp"><img src="images/true.jpg" alt="true" class="img-ab"></picture>
+                                 </div>
+                                 <div class="platformSlider__slide__info__img__content__item">
+                                    <picture><source srcset="images/eda.webp" type="image/webp"><img src="images/eda.jpg" alt="eda" class="img-ab"></picture>
+                                 </div>
+                                 <div class="platformSlider__slide__info__img__content__item">
+                                    <picture><source srcset="images/imajinarium.webp" type="image/webp"><img src="images/imajinarium.jpg" alt="imajinarium" class="img-ab"></picture>
+                                 </div>
+                                 <div class="platformSlider__slide__info__img__content__item">
+                                    <picture><source srcset="images/party.webp" type="image/webp"><img src="images/party.jpg" alt="party" class="img-ab"></picture>
+                                 </div>
+                                 <div class="platformSlider__slide__info__img__content__item">
+                                    <picture><source srcset="images/kvith.webp" type="image/webp"><img src="images/kvith.jpg" alt="kvith" class="img-ab"></picture>
+                                 </div>
+                                 <div class="platformSlider__slide__info__img__content__item">
+                                    <picture><source srcset="images/mafia.webp" type="image/webp"><img src="images/mafia.jpg" alt="mafia" class="img-ab"></picture>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="platformSlider__pagination"></div>
+         </section>
+         <section class="rating">
+            <div class="rating__slider">
+               <div class="rating__slider__btns">
+                  <button class="rating__slider__btn __prev __btnSlider">
+                     <div class="__btnSlider__content">
+                        <div class="__btnSlider__content__img">
+                           <img src="images/sliderArrow.svg" alt="sliderArrow" class="img-con">
+                        </div>
+                     </div>
+                  </button>
+                  <button class="rating__slider__btn __next __btnSlider">
+                     <div class="__btnSlider__content">
+                        <div class="__btnSlider__content__img">
+                           <img src="images/sliderArrow.svg" alt="sliderArrow" class="img-con">
+                        </div>
+                     </div>
+                  </button>
+               </div>
+               <div class="swiper ratingSlider">
+                  <div class="swiper-wrapper">
+                     <div class="swiper-slide ratingSlider__slide">
+                        <div class="ratingSlider__slide__quote">
+                           <img src="images/quote.svg" alt="quote" class="img-con">
+                        </div>
+                        <p class="ratingSlider__slide__text">Команда, опыт, любовь к прогрессу, экспертиза, а еще
+                           business-first подход: мы не «продаем решения», а создаем стратегию развития вместе с
+                           заказчиком, где важен результат, а не набор технологий.</p>
+                        <div class="ratingSlider__slide__user">
+                           <span class="ratingSlider__slide__user__name __lead">Антон Кириленко</span>
+                           <div class="ratingSlider__slide__user__avatar">
+                              <picture><source srcset="images/rating.webp" type="image/webp"><img src="images/rating.png" alt="avatar" class="img-ab"></picture>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="swiper-slide ratingSlider__slide">
+                        <div class="ratingSlider__slide__quote">
+                           <img src="images/quote.svg" alt="quote" class="img-con">
+                        </div>
+                        <p class="ratingSlider__slide__text">Команда, опыт, любовь к прогрессу, экспертиза, а еще
+                           business-first подход: мы не «продаем решения», а создаем стратегию развития вместе с
+                           заказчиком, где важен результат, а не набор технологий. Команда, опыт, любовь к прогрессу,
+                           экспертиза, а еще
+                           business-first подход: мы не «продаем решения», а создаем стратегию развития вместе с
+                           заказчиком, где важен результат, а не набор технологий.</p>
+                        <div class="ratingSlider__slide__user">
+                           <span class="ratingSlider__slide__user__name __lead">Андрей Колотушкин</span>
+                           <div class="ratingSlider__slide__user__avatar">
+                              <picture><source srcset="images/rating.webp" type="image/webp"><img src="images/rating.png" alt="avatar" class="img-ab"></picture>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="faq">
+            <div class="faq__buble">
+               <picture><source srcset="images/buble.webp" type="image/webp"><img src="images/buble.png" alt="buble" class="img-con"></picture>
+            </div>
+            <div class="faq__header">
+               <p class="cataloge__header__aside">FAQ</p>
+            </div>
+            <div class="faq__list">
+               <div class="faq__list__item">
+                  <div class="faq__list__item__container">
+                     <h4 class="faq__list__item__container__header __h4">Что такое PartyStation?</h4>
+                     <div class="faq__list__item__container__body __body">
+                        <div class="faq__list__item__container__body__padding">
+                           <p class="faq__list__item__container__body__text __body">Partystation - это как ваш любимый
+                              онлайн-кинотеатр, но с играми. Это платформа, на которой представлены игры от лучших
+                              гейм-дизайнеров. Игроки собираются перед одним экраном и используют мобильные телефоны в
+                              качестве контроллеров.</p>
+                           <ol class="faq__list__item__container__body__list">
+                              <li class="faq__list__item__container__body__list__item __body">Откройте сайт в браузере
+                                 на
+                                 компьютере или смарт-тв (или запустите приложение на приставке).</li>
+                              <li class="faq__list__item__container__body__list__item __body">Нажмите «Начать играть»,
+                                 отсканируйте камерой мобильного телефона QR-код с экрана (или введите код в поле ввода)
+                              </li>
+                              <li class="faq__list__item__container__body__list__item __body">Введите свое имя.</li>
+                              <li class="faq__list__item__container__body__list__item __body">Все остальные игроки тоже
+                                 сканируют QR-код и подключаются к игре</li>
+                              <li class="faq__list__item__container__body__list__item __body">Жмите «Играть», выбирайте
+                                 игру и развлекайтесь</li>
+                           </ol>
+                        </div>
+                     </div>
+                  </div>
+                  <button class="faq__list__item__button"></button>
+               </div>
+               <div class="faq__list__item">
+                  <div class="faq__list__item__container">
+                     <h4 class="faq__list__item__container__header __h4">Какие игры есть в PartyStation?</h4>
+                     <div class="faq__list__item__container__body __body">
+                        <div class="faq__list__item__container__body__padding">
+                           <p class="faq__list__item__container__body__text __body">Partystation - это как ваш любимый
+                              онлайн-кинотеатр, но с играми. Это платформа, на которой представлены игры от лучших
+                              гейм-дизайнеров. Игроки собираются перед одним экраном и используют мобильные телефоны в
+                              качестве контроллеров.</p>
+                           <ol class="faq__list__item__container__body__list">
+                              <li class="faq__list__item__container__body__list__item __body">Откройте сайт в браузере
+                                 на
+                                 компьютере или смарт-тв (или запустите приложение на приставке).</li>
+                              <li class="faq__list__item__container__body__list__item __body">Нажмите «Начать играть»,
+                                 отсканируйте камерой мобильного телефона QR-код с экрана (или введите код в поле ввода)
+                              </li>
+                              <li class="faq__list__item__container__body__list__item __body">Введите свое имя.</li>
+                              <li class="faq__list__item__container__body__list__item __body">Все остальные игроки тоже
+                                 сканируют QR-код и подключаются к игре</li>
+                              <li class="faq__list__item__container__body__list__item __body">Жмите «Играть», выбирайте
+                                 игру и развлекайтесь</li>
+                           </ol>
+                        </div>
+                     </div>
+                  </div>
+                  <button class="faq__list__item__button"></button>
+               </div>
+               <div class="faq__list__item">
+                  <div class="faq__list__item__container">
+                     <h4 class="faq__list__item__container__header __h4">Как играть в PartyStation?</h4>
+                     <div class="faq__list__item__container__body __body">
+                        <div class="faq__list__item__container__body__padding">
+                           <p class="faq__list__item__container__body__text __body">Partystation - это как ваш любимый
+                              онлайн-кинотеатр, но с играми. Это платформа, на которой представлены игры от лучших
+                              гейм-дизайнеров. Игроки собираются перед одним экраном и используют мобильные телефоны в
+                              качестве контроллеров.</p>
+                           <ol class="faq__list__item__container__body__list">
+                              <li class="faq__list__item__container__body__list__item __body">Откройте сайт в браузере
+                                 на
+                                 компьютере или смарт-тв (или запустите приложение на приставке).</li>
+                              <li class="faq__list__item__container__body__list__item __body">Нажмите «Начать играть»,
+                                 отсканируйте камерой мобильного телефона QR-код с экрана (или введите код в поле ввода)
+                              </li>
+                              <li class="faq__list__item__container__body__list__item __body">Введите свое имя.</li>
+                              <li class="faq__list__item__container__body__list__item __body">Все остальные игроки тоже
+                                 сканируют QR-код и подключаются к игре</li>
+                              <li class="faq__list__item__container__body__list__item __body">Жмите «Играть», выбирайте
+                                 игру и развлекайтесь</li>
+                           </ol>
+                        </div>
+                     </div>
+                  </div>
+                  <button class="faq__list__item__button"></button>
+               </div>
+               <div class="faq__list__item">
+                  <div class="faq__list__item__container">
+                     <h4 class="faq__list__item__container__header __h4">Какие устройства поддерживаются в PatyStation?
+                     </h4>
+                     <div class="faq__list__item__container__body __body">
+                        <div class="faq__list__item__container__body__padding">
+                           <p class="faq__list__item__container__body__text __body">Partystation - это как ваш любимый
+                              онлайн-кинотеатр, но с играми. Это платформа, на которой представлены игры от лучших
+                              гейм-дизайнеров. Игроки собираются перед одним экраном и используют мобильные телефоны в
+                              качестве контроллеров.</p>
+                           <ol class="faq__list__item__container__body__list">
+                              <li class="faq__list__item__container__body__list__item __body">Откройте сайт в браузере
+                                 на
+                                 компьютере или смарт-тв (или запустите приложение на приставке).</li>
+                              <li class="faq__list__item__container__body__list__item __body">Нажмите «Начать играть»,
+                                 отсканируйте камерой мобильного телефона QR-код с экрана (или введите код в поле ввода)
+                              </li>
+                              <li class="faq__list__item__container__body__list__item __body">Введите свое имя.</li>
+                              <li class="faq__list__item__container__body__list__item __body">Все остальные игроки тоже
+                                 сканируют QR-код и подключаются к игре</li>
+                              <li class="faq__list__item__container__body__list__item __body">Жмите «Играть», выбирайте
+                                 игру и развлекайтесь</li>
+                           </ol>
+                        </div>
+                     </div>
+                  </div>
+                  <button class="faq__list__item__button"></button>
+               </div>
+               <div class="faq__list__item">
+                  <div class="faq__list__item__container">
+                     <h4 class="faq__list__item__container__header __h4">Сколько это стоит?</h4>
+                     <div class="faq__list__item__container__body __body">
+                        <div class="faq__list__item__container__body__padding">
+                           <p class="faq__list__item__container__body__text __body">Partystation - это как ваш любимый
+                              онлайн-кинотеатр, но с играми. Это платформа, на которой представлены игры от лучших
+                              гейм-дизайнеров. Игроки собираются перед одним экраном и используют мобильные телефоны в
+                              качестве контроллеров.</p>
+                           <ol class="faq__list__item__container__body__list">
+                              <li class="faq__list__item__container__body__list__item __body">Откройте сайт в браузере
+                                 на
+                                 компьютере или смарт-тв (или запустите приложение на приставке).</li>
+                              <li class="faq__list__item__container__body__list__item __body">Нажмите «Начать играть»,
+                                 отсканируйте камерой мобильного телефона QR-код с экрана (или введите код в поле ввода)
+                              </li>
+                              <li class="faq__list__item__container__body__list__item __body">Введите свое имя.</li>
+                              <li class="faq__list__item__container__body__list__item __body">Все остальные игроки тоже
+                                 сканируют QR-код и подключаются к игре</li>
+                              <li class="faq__list__item__container__body__list__item __body">Жмите «Играть», выбирайте
+                                 игру и развлекайтесь</li>
+                           </ol>
+                        </div>
+                     </div>
+                  </div>
+                  <button class="faq__list__item__button"></button>
+               </div>
+            </div>
+         </section>
+         <section class="partner">
+            <div class="partner__moon">
+               <picture><source srcset="images/moon.webp" type="image/webp"><img src="images/moon.png" alt="moon" class="img-con"></picture>
+            </div>
+            <div class="partner__header">
+               <p class="cataloge__header__aside">Наши партнеры</p>
+            </div>
+            <div class="partner__items">
+               <a href="#" class="partner__item">
+                  <img src="images/megafon.svg" alt="megafon" class="img-con">
+               </a>
+               <a href="#" class="partner__item">
+                  <img src="images/mts.svg" alt="mts" class="img-con">
+               </a>
+               <a href="#" class="partner__item">
+                  <img src="images/ruda.svg" alt="ruda" class="img-con">
+               </a>
+               <a href="#" class="partner__item">
+                  <img src="images/Xiaomi.svg" alt="Xiaomi" class="img-con">
+               </a>
+               <a href="#" class="partner__item">
+                  <img src="images/quizheroes.svg" alt="quizheroes" class="img-con">
+               </a>
+               <a href="#" class="partner__item">
+                  <img src="images/sber.svg" alt="sber" class="img-con">
+               </a>
+            </div>
+         </section>
+      </div>
+      <footer class="footer">
+         <div class="footer__content">
+            <div class="footer__logo">
+               <a href="#" class="footer__logo__img">
+                  <img src="images/logo.svg" alt="logo" class="img-con">
+               </a>
+            </div>
+            <nav class="footer__nav">
+               <ul class="footer__nav__list">
+                  <li class="footer__nav__list__item __h4">
+                     <a href="#" class="footer__nav__list__item__link">О компании</a>
+                  </li>
+                  <li class="footer__nav__list__item __h4">
+                     <a href="#" class="footer__nav__list__item__link">Вакансии</a>
+                  </li>
+                  <li class="footer__nav__list__item __h4">
+                     <a href="#" class="footer__nav__list__item__link">Для партнеров</a>
+                  </li>
+                  <li class="footer__nav__list__item __h4">
+                     <a href="#" class="footer__nav__list__item__link">Размещение рекламы</a>
+                  </li>
+               </ul>
+            </nav>
+            <div class="footer__email">
+               <a href="emailto:info@pstv.ru" class="footer__email__text __h4">info@pstv.ru</a>
+            </div>
+            <div class="footer__null"></div>
+            <div class="footer__buttons">
+               <a href="#" class="footer__buttons__helping __btnLine">
+                  <div class="__btnLine__content">
+                     <span class="__btnLine__content__text">Служба поддержки</span>
+                  </div>
+               </a>
+               <a href="#" class="footer__buttons__social __btnSlider">
+                  <div class="__btnSlider__content">
+                     <div class="__btnSlider__content__img">
+                        <img src="images/telegram.svg" alt="sliderArrow" class="img-con">
+                     </div>
+                  </div>
+               </a>
+               <a href="#" class="footer__buttons__social __btnSlider">
+                  <div class="__btnSlider__content">
+                     <div class="__btnSlider__content__img">
+                        <img src="images/ok.svg" alt="sliderArrow" class="img-con">
+                     </div>
+                  </div>
+               </a>
+               <a href="#" class="footer__buttons__social __btnSlider">
+                  <div class="__btnSlider__content">
+                     <div class="__btnSlider__content__img">
+                        <img src="images/youtube.svg" alt="sliderArrow" class="img-con">
+                     </div>
+                  </div>
+               </a>
+               <a href="#" class="footer__buttons__social __btnSlider">
+                  <div class="__btnSlider__content">
+                     <div class="__btnSlider__content__img">
+                        <img src="images/vk.svg" alt="sliderArrow" class="img-con">
+                     </div>
+                  </div>
+               </a>
+               <a href="#" class="footer__buttons__google __btnLine">
+                  <div class="__btnLine__content">
+                     <div class="footer__buttons__google__img">
+                        <img src="images/googlePlay.svg" alt="googlePlay" class="img-con">
+                     </div>
+                  </div>
+               </a>
+            </div>
+            <div class="footer__contact">
+               <a href="tel:+7(499)6850043" class="footer__contact__tel __body">+7 (499) 685-00-43</a>
+               <p class="footer__contact__text __body">к322А, Центральный пр., Зеленоград, Москва,</p>
+            </div>
+            <div class="footer__bottom __smallBody">
+               <span class="footer__bottom__name">ООО «Студия Валерия Комягина»</span>
+               <div class="footer__bottom__links">
+                  <div class="footer__bottom__links__block">
+                     <a href="#" class="footer__bottom__link">Пользовательское соглашение</a>
+                  </div>
+                  <a href="#" class="footer__bottom__link">Политика конфиденциальности</a>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </div>
+</body>
+
+</html>
