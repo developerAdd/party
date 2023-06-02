@@ -1639,6 +1639,14 @@ body {
   transition: all 5s linear 0.8s;
 }
 
+.catalogeaboutSlider__slide.swiper-slide-thumb-active.stop .catalogeaboutSlider__slide__progress__value {
+  width: 100%;
+  -webkit-transition: all 1s linear 0s;
+  -o-transition: all 1s linear 0s;
+  transition: all 1s linear 0s;
+  background-color: var(--blue);
+}
+
 .catalogeaboutSlider__slide__progress {
   width: 100%;
   height: 2px;
